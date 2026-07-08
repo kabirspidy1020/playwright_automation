@@ -1,0 +1,25 @@
+{
+  "registerUser": {
+    "name": "Prakhar Tiwari",
+    "email": "prakhar123@gmail.com",
+    "password": "Prakhar@123",
+
+    "day": "12",
+    "month": "7",
+    "year": "1999",
+
+    "firstName": "Prakhar",
+    "lastName": "Tiwari",
+    "company": "Mindfire",
+    "address1": "Noida Sector 90",
+    "address2": "Uttar Pradesh",
+
+    "country": "India",
+    "state": "Uttar Pradesh",
+    "city": "Noida",
+
+    "zipcode": "201309",
+
+    "mobileNumber": "9876543210"
+  }
+}
