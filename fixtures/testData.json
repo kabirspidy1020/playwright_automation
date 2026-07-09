@@ -21,5 +21,10 @@
     "zipcode": "201309",
 
     "mobileNumber": "9876543210"
+  },
+
+  "loginUser": {
+    "email": "prakhar123@gmail.com",
+    "password": "Prakhar@123"
   }
 }

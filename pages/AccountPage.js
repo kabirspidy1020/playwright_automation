@@ -13,6 +13,8 @@ exports.AccountPage=class AccountPage extends BasePage{
     this.deleteAccountButton = "//a[contains(text(),'Delete Account')]";
 
     this.accountDeletedHeading = "//b[text()='Account Deleted!']";
+
+    this.logoutBtn="//a[normalize-space()='Logout']";
     }
 
     async verifyAccountCreated(){
@@ -44,4 +46,10 @@ async verifyAccountDeleted(){
     await this.isVisible(this.accountDeletedHeading);
 
 }
+
+async clickLogout(){
+    await this.click(this.logoutBtn);
+}
+
+
 }
