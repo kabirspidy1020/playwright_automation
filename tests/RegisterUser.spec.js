@@ -25,26 +25,9 @@ test.describe('Registration Module', () => {
     await loginPage.clickSignup();
     await signupPage.verifyAccountInformation();
 
-    await signupPage.selectTitle();
-
-    await signupPage.enterPassword(
-        testData.registerUser.password
-    );
-
-    await signupPage.selectDOB(
-        testData.registerUser.day,
-        testData.registerUser.month,
-        testData.registerUser.year
-    );
-
-    await signupPage.subscribeNewsletter();
-
-    await signupPage.subscribeSpecialOffer();
-
-    await signupPage.enterAddressDetails(
+    await signupPage.registerUser(
         testData.registerUser
     );
-    await signupPage.clickCreateAccount();
     await accountPage.verifyAccountCreated();
     await accountPage.clickContinue();
     await accountPage.verifyLoggedInUser();

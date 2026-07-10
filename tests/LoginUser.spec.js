@@ -25,26 +25,9 @@ test.describe('Login Module', () => {
         await loginPage.clickSignup();
         await signupPage.verifyAccountInformation();
 
-        await signupPage.selectTitle();
-
-        await signupPage.enterPassword(
-            testData.registerUser.password
-        );
-
-        await signupPage.selectDOB(
-            testData.registerUser.day,
-            testData.registerUser.month,
-            testData.registerUser.year
-        );
-
-        await signupPage.subscribeNewsletter();
-
-        await signupPage.subscribeSpecialOffer();
-
-        await signupPage.enterAddressDetails(
+        await signupPage.registerUser(
             testData.registerUser
         );
-        await signupPage.clickCreateAccount();
         await accountPage.verifyAccountCreated();
         await accountPage.clickContinue();
         await accountPage.verifyLoggedInUser();
@@ -55,11 +38,10 @@ test.describe('Login Module', () => {
 
         await loginPage.verifyLoginHeading();
 
-        await loginPage.enterLoginEmail(email);
-
-        await loginPage.enterLoginPassword(testData.registerUser.password);
-
-        await loginPage.clickLogin();
+        await loginPage.login(
+            email,
+            testData.registerUser.password
+        );
 
         await accountPage.verifyLoggedInUser();
 

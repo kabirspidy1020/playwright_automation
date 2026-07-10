@@ -19,6 +19,8 @@ exports.LoginPage = class LoginPage extends BasePage{
 
     this.loginButton = "button[data-qa='login-button']";
 
+    this.loginErrorMessage = "//p[text()='Your email or password is incorrect!']";
+
 
 }
 
@@ -70,5 +72,19 @@ async clickLogin(){
 
     await this.click(this.loginButton);
 
+}
+
+async login(email,password){
+
+    await this.enterLoginEmail(email);
+
+    await this.enterLoginPassword(password);
+
+    await this.clickLogin();
+
+}
+
+async verifyLoginError() {
+    await this.isVisible(this.loginErrorMessage);
 }
 }

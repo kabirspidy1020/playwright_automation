@@ -114,4 +114,26 @@ async clickCreateAccount(){
     await this.click(this.createAccountButton);
 
 }
+
+async registerUser(userData){
+
+    await this.selectTitle();
+
+    await this.enterPassword(userData.password);
+
+    await this.selectDOB(
+        userData.day,
+        userData.month,
+        userData.year
+    );
+
+    await this.subscribeNewsletter();
+
+    await this.subscribeSpecialOffer();
+
+    await this.enterAddressDetails(userData);
+
+    await this.clickCreateAccount();
+
+}
 }

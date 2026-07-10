@@ -26,5 +26,9 @@
   "loginUser": {
     "email": "prakhar123@gmail.com",
     "password": "Prakhar@123"
-  }
+  },
+  "invalidLoginUser": {
+    "email": "invalid@gmail.com",
+    "password": "WrongPassword123"
+}
 }
