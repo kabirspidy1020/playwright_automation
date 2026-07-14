@@ -30,5 +30,16 @@
     "invalidLoginUser": {
       "email": "invalid@gmail.com",
       "password": "WrongPassword123"
-  }
+  },
+  "contactUs": {
+
+    "name": "Prakhar Tiwari",
+
+    "email": "tiwariprakhar037@gmail.com",
+
+    "subject": "Automation Testing",
+
+    "message": "This is a Playwright automation test."
+
+}
   }
