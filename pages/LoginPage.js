@@ -21,6 +21,8 @@ exports.LoginPage = class LoginPage extends BasePage{
 
     this.loginErrorMessage = "//p[text()='Your email or password is incorrect!']";
 
+    this.emailAlreadyExistsError = "//p[text()='Email Address already exist!']";
+
 
 }
 
@@ -86,5 +88,9 @@ async login(email,password){
 
 async verifyLoginError() {
     await this.isVisible(this.loginErrorMessage);
+}
+
+async verifyExistingEmailError() {
+    await this.isVisible(this.emailAlreadyExistsError);
 }
 }
