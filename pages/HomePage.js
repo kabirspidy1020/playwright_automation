@@ -5,6 +5,7 @@ exports.HomePage=class HomePage extends BasePage{
     super(page);
     this.signupLoginBtn="a[href='/login']";
     this.testCasesButton = "//a[contains(text(),'Test Cases')]";
+    this.productsButton = "//a[contains(text(),'Products')]";
     
 
 }
@@ -20,6 +21,12 @@ async verifyHomePage() {
     async clickTestCases(){
 
     await this.click(this.testCasesButton);
+
+}
+
+async clickProducts(){
+
+    await this.click(this.productsButton);
 
 }
 

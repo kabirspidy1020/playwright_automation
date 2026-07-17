@@ -41,5 +41,8 @@
 
     "message": "This is a Playwright automation test."
 
+},
+"searchProduct": {
+    "productName": "Blue Top"
 }
   }
