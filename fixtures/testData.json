@@ -44,5 +44,8 @@
 },
 "searchProduct": {
     "productName": "Blue Top"
+},
+"subscription": {
+    "email": "prakhar@gmail.com"
 }
   }
